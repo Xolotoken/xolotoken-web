@@ -26,6 +26,7 @@ body
     background-position: center;
     /*background-color: #A3A3A3;*/
 }
+
 header
 {
     position: fixed;
@@ -118,21 +119,21 @@ header .mainMenu .closeMenu, .icons i
 {
     header .mainMenu
     {
-        height: 100%;
+        height: 95%;
         position: fixed;
-        top: 0;
         right: 0;
         left: 0;
-        bottom: 0;
+        top:0;
         margin: 15px;
         flex-direction: column;
         justify-content: center;
-        background-attachment: #fff;
         transition: top 1s ease;
         display: none;
         z-index: 5;
-        background-color: grey;
+        background: grey;
+        border-radius: 15px;
     }
+
     header .mainMenu .closeMenu
     {
         display: block;
@@ -144,10 +145,13 @@ header .mainMenu .closeMenu, .icons i
     {
         display: block;
     }
-    .icons i
+    header .icons i
     {
-        display: flex;
+        display: inline;
         padding: 12px;
+        text-decoration: none;
+        background: none;
+
     }
 }
 
@@ -195,10 +199,16 @@ div.landingPage
     border: 2px solid var(--golden);
     padding: 12px;
     border-radius: 100px;
+    background: none;
+    
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
 }
 .landingPage .button:hover
 {
-    opacity: 100%;
+    background: var(--golden);
 }
 
 .text-golden
@@ -608,8 +618,8 @@ div.img__description_icons
 
   /* Create four equal columns */
 .ourTeam .column {
-    flex: 25%;
-    padding: 25px;
+    flex: 30%;
+    padding: 15px;
 }
 
 
@@ -645,7 +655,75 @@ div.partners
 {
     display: none;
 }
+/* ----- Qr Code Segment ----- */
 
+.qrSegment button{
+    padding: .5em;
+    border-radius: 25px;
+    border: 2px solid var(--golden);
+    background: none;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
+}
+.qrSegment button:hover
+{
+    background: var(--golden);
+}
+
+.qrSegment .content
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.qrSegment .row
+{
+    display: table-cell;
+}
+
+.qrSegment .text
+{
+    margin-top: 10px;
+}
+
+.qrSegment .column-25
+{
+    width: 25%;
+}
+.qrSegment .column-75
+{
+    width: 100%;
+}
+
+.qrSegment img
+{
+    float: left;
+}
+
+.qrSegment p
+{
+    margin-top: 10px;
+}
+
+@media(max-width: 1000px)
+{
+    .qrSegment .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .qrSegment .column-25
+    {
+        width: 100%;
+    }
+
+    .qrSegment div.text
+    {
+        align-content: center;
+    }
+}
 /* ----- Flags ----- */ 
 .flags .container
 {
@@ -730,6 +808,11 @@ hr.wave
 .anchor
 {
     scroll-margin-top: 100px;
+}
+
+.bold
+{
+    font-weight: bold;
 }
 @media(min-width: 800px)
 {

@@ -18,13 +18,12 @@
 
         <ul class="mainMenu">
 
-            <li><a href="#home">Home</a></li>
-            <li><a href="#xoloitzcuintle">Xoloitzcuintle</a></li>
-            <li><a href="#contract">Contract</a></li>
-            <li><a href="#routePhase">Route Phase</a></li>
-            <li><a href="#ourTeam">Our Team</a></li>
+            <li><a href="#home" id="alsoCloseMM">Home</a></li>
+            <li><a href="#xoloitzcuintle" id="alsoCloseMM">Xoloitzcuintle</a></li>
+            <li><a href="#routePhase" id="alsoCloseMM">Route Phase</a></li>
+            <li><a href="#ourTeam" id="alsoCloseMM">Our Team</a></li>
 
-            <div class="closeMenu"><i class="fas fa-2x fa-xmark"></i></div>
+            <div class="closeMenu"><i class="fas fa-2x fa-times"></i></div>
 
             <span class="icons">
 
@@ -215,12 +214,6 @@
                     <li>Foundation 2%</li>
                 </ul>
             </div>
-        </section>
-
-        <hr class="wave">
-
-        <section id="contract" class="contract anchor">
-            <div class="content"></div>
         </section>
 
         <hr class="wave">
@@ -505,6 +498,47 @@
                     </div>
                 </div>
                 
+            </div>
+        </section>
+
+        <hr class="wave">
+
+        <section id="qrSegment" class="qrSegment">
+            <div class="content">
+                <div class="header">
+                    <h2>Donate to <span class="text-golden">Xolo Token</span> Project</h2>
+                </div>
+                <div class="row">
+                    <div class="qrCode column column-25">
+                        <img src="img/qrCodeDonation.png" alt="" width="100%">
+                    </div>  
+                    <div class="text column column-75">
+                        <h3>
+                            <span class="text-golden">Xolo Token</span> is going to help dog oriented foundations, with your support.
+                        </h3>
+                        <div class="text-small">
+                            <div class="receivingAddress">
+                                <p>Receiving Address:</p>
+                                <span>
+                                    <div class="button">
+                                        <a onclick="copyAddress()" style="text-decoration: none;">
+                                            <button><span>Copy Address</span></button>
+                                        </a>                        
+                                    </div>    
+                                </span>
+                            </div>
+                            
+                            <p>Accepted Token: <span class="bold">Any BEP20 (BSC)</span></p>
+                            <p>Preferred Token: <span class="bold text-golden">Xolo Token</span></p>
+                        </div>
+                        <div class="button">
+                            <a href="https://bscscan.com/" style="text-decoration: none;" target="_blank">
+                                <button><span>View On BscScan</span></button>
+                            </a>                        
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </section>
 
