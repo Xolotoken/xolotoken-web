@@ -61,7 +61,7 @@ function showPartners(){
 function copyAddress()
 {
     var el = document.createElement('textarea');
-    el.value = "0xasdas7fad7afg6hnb67d7fgdf75h7gfd6g5";
+    el.value = "0x2d37b9086f6069f98f61f6f5733fdde14e35c0cc";
     el.setAttribute('readonly', '');
     el.style = {position: 'absolute', left: '-9999px'};
     document.body.appendChild(el);
