@@ -731,31 +731,52 @@ div.partners
         align-content: center;
     }
 }
-/* ----- Flags ----- */ 
-.flags .container
+/* ----- PreFooter -----*/
+
+.preFooter .main-content
 {
-    position: relative;
-    display: inline-block;
-    align-items: center;
+    display: flex;
+    background-color: #3F3F3F;
+}
+.preFooter .main-content .box
+{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box .content
+{
+    margin-top: 20px;
+}
+.left .content .social
+{
+    margin-top: 20px;
+}
+.left .content .social a
+{
+    padding: 0px 2px ;
+}
+.right .box
+{
+    align-content: center;
+    text-align: center;
     justify-content: center;
 }
-.flags .row
+.preFooter img
 {
-    text-align: center;
+    width: 10%;
 }
-
-.flags .column 
+@media(max-width: 800px)
 {
-    display: inline-block;
-    width: 5%;
-    height: 5%;
-    margin: 5px;
+    .preFooter .main-content
+    {
+        background-color: #3F3F3F;
+        display: inline;
+    }
+    .preFooter
+    {
+        background-color: #3F3F3F;
+    }
 }
-.flags img
-{
-    width: 100%;
-}
-
 
 /* ----- Footer ----- */
 
@@ -764,7 +785,9 @@ footer
     background: #2D2D2D;;
     align-items: center;
     border-top: 2px solid var(--golden);
+
 }
+
 footer .content
 {
     color: #FFFFFF;
@@ -773,30 +796,33 @@ footer .content
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 1.1em;    
-
+    font-size: 1.1em;  
 }
-i.telegram:hover
+
+
+
+/* ----- Others ----- */
+span.telegram:hover
 {
     color: #0088CC
 }
-i.twitter:hover
+span.twitter:hover
 {
     color: #1DA1F2
 }
-i.facebook:hover
+span.facebook:hover
 {
     color: #3B5998
 }
-i.discord:hover    
+span.discord:hover    
 {
     color: #738ADB
 }
-i.instagram:hover
+span.instagram:hover
 {
     color: #DD2A7B
 }
-i.reddit:hover
+span.reddit:hover
 {
     color: #FF4500
 }
@@ -810,7 +836,7 @@ hr.wave
     margin-bottom: 25px;
     position: relative;
     width: 50%;
-    height: 3px;
+    height: 1px;
     background-image: url(img/hr-divider.png);
     background-repeat: no-repeat;
     background-position: center;       
@@ -825,6 +851,7 @@ hr.wave
 {
     font-weight: bold;
 }
+
 @media(min-width: 800px)
 {
     hr.wave
