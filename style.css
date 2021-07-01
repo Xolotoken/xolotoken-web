@@ -43,7 +43,7 @@ header
 header.sticky
 {
     padding: 5px 20px;
-    background: #fff;
+    background: #2D2D2D;
     color: #000;
 }
 header .logo
@@ -91,12 +91,12 @@ header ul li a
 header.sticky .logo,
 header.sticky ul li a
 {
-    color: #000;
+    color: #FFF;
 }
 
 header.sticky .openMenu i
 {
-    color: #000;
+    color: #FFF;
 }
 
 header .openMenu i
@@ -130,7 +130,7 @@ header .mainMenu .closeMenu, .icons i
         transition: top 1s ease;
         display: none;
         z-index: 5;
-        background: grey;
+        background: #2D2D2D;
         border-radius: 15px;
     }
 
@@ -448,8 +448,9 @@ div.contenido
 .timeline .content 
 {
     padding: 20px 30px;
-    background-color: var(--dark-golden);
+    background: linear-gradient(var(--dark-golden), #2D2D2D);
     position: relative;
+    opacity: 0.8;
     border-radius: 6px;
 }
 
@@ -657,6 +658,7 @@ div.partners
 }
 /* ----- Qr Code Segment ----- */
 
+
 .qrSegment button{
     padding: .5em;
     border-radius: 25px;
@@ -674,7 +676,6 @@ div.partners
 
 .qrSegment .content
 {
-    display: flex;
     flex-wrap: wrap;
 }
 .qrSegment .row
@@ -704,6 +705,12 @@ div.partners
 .qrSegment p
 {
     margin-top: 10px;
+}
+
+.qrSegment div.title h2
+{
+    text-align: center;
+    display: block;
 }
 
 @media(max-width: 1000px)
@@ -754,7 +761,7 @@ div.partners
 
 footer
 {
-    background: black;
+    background: #2D2D2D;;
     align-items: center;
     border-top: 2px solid var(--golden);
 }
@@ -797,12 +804,16 @@ i.reddit:hover
 hr.wave
 {
     border: 0;
-    height: 55px;
-    background-image: url(img/hr_wave.png);
+
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    width: 50%;
+    height: 3px;
+    background-image: url(img/hr-divider.png);
     background-repeat: no-repeat;
-    background-position: center;
-    
-    
+    background-position: center;       
 }
 
 .anchor
@@ -818,6 +829,6 @@ hr.wave
 {
     hr.wave
     {
-        background-image: url(img/hr_wave-wide.png);
+        background-image: url(img/hr-divider.png);
     }
 }
