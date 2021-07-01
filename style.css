@@ -15,6 +15,7 @@
 {
 --golden: #DBAB54;
 --dark-golden: #AA6C39;
+--dark-grey: #202020
 }
 /* ----- Banner ----- */
 body
@@ -43,7 +44,7 @@ header
 header.sticky
 {
     padding: 5px 20px;
-    background: #2D2D2D;
+    background: var(--dark-grey);
     color: #000;
 }
 header .logo
@@ -181,16 +182,16 @@ div.landingPage
 .landingPage .content h2
 {
     font-size: 2em;
-    color: #ffffff;
 }
 .landingPage .content p
 {
     font-size: 1.5em;
-    color: #ffffff;
+
 }
 .landingPage .buttons
 {
     display: flex;
+    justify-content: space-evenly;
     margin-top: 30px;
 }
 
@@ -209,11 +210,6 @@ div.landingPage
 .landingPage .button:hover
 {
     background: var(--golden);
-}
-
-.text-golden
-{
-    color: var(--golden);
 }
 
 @media(max-width: 800px)
@@ -255,7 +251,7 @@ div.contenido
 {
     display: block;
     width: 100%;
-    padding: 10%;
+    padding: 10px 10% 10px;
     height: auto;
     background-color: #000;
     z-index: 10;
@@ -344,11 +340,16 @@ div.contenido
                                     #245E8F 99% 100%);
 }
 /* ----- Deflationary -----*/ 
-.contract .content
+.deflationary .content
 {
     height: auto;
     width: 100%;
-    background-color: tomato;
+    text-align: center;
+    
+}
+.deflationary ul
+{
+    list-style-type: none;
 }
 /* ----- Route Phase ----- */
 
@@ -702,6 +703,16 @@ div.partners
     float: left;
 }
 
+.qrSegment .infos
+{
+    line-height: 1;
+}
+
+.qrSegment div.bscscanButton
+{
+    margin-top: 100px;
+}
+
 .qrSegment p
 {
     margin-top: 10px;
@@ -711,6 +722,13 @@ div.partners
 {
     text-align: center;
     display: block;
+}
+
+.qrSegment p.opacityGradient
+{
+    background: -webkit-linear-gradient(.5turn, #eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media(max-width: 1000px)
@@ -733,6 +751,10 @@ div.partners
 }
 /* ----- PreFooter -----*/
 
+.preFooter
+{
+    border-top: 2px solid var(--golden);
+}
 .preFooter .main-content
 {
     display: flex;
@@ -740,30 +762,40 @@ div.partners
 }
 .preFooter .main-content .box
 {
-    flex-basis: 50%;
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 .box .content
 {
-    margin-top: 20px;
+    margin-top: 0px;
 }
-.left .content .social
+
+.preFooter .left
 {
-    margin-top: 20px;
+    flex: 0 20%;
 }
-.left .content .social a
+.preFooter .middle
 {
-    padding: 0px 2px ;
+    flex: 1;
 }
-.right .box
+.preFooter .right
 {
-    align-content: center;
-    text-align: center;
-    justify-content: center;
+    flex: 0 20%;
 }
+
+.preFooter div.right 
+{    
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+.preFooter .right .box 
+{
+    vertical-align: middle;
+}
+
 .preFooter img
 {
-    width: 10%;
+    width: 5%;
 }
 @media(max-width: 800px)
 {
@@ -782,7 +814,7 @@ div.partners
 
 footer
 {
-    background: #2D2D2D;;
+    background: var(--dark-grey);;
     align-items: center;
     border-top: 2px solid var(--golden);
 
@@ -791,7 +823,7 @@ footer
 footer .content
 {
     color: #FFFFFF;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -802,6 +834,13 @@ footer .content
 
 
 /* ----- Others ----- */
+
+
+.text-golden
+{
+    color: var(--golden);
+}
+
 span.telegram:hover
 {
     color: #0088CC
@@ -858,4 +897,9 @@ hr.wave
     {
         background-image: url(img/hr-divider.png);
     }
+}
+
+.title
+{
+    text-align: center;
 }
