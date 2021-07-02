@@ -28,12 +28,12 @@
 
             <span class="icons">
 
-                <a href="https://t.me/xolotokena"><i class="fab fa-2x fa-telegram telegram"></i></a>
-                <a href="https://twitter.com/TokenXolo"><i class="fab fa-2x fa-twitter-square twitter"></i></a>
-                <a href="https://www.facebook.com/groups/4656468367700883"><i class="fab fa-2x fa-facebook-square facebook"></i></a>
-                <a href="https://discord.com/invite/55CndQd5vF"><i class="fab fa-2x fa-discord discord"></i></a>
-                <a href="https://www.instagram.com/xolotoken/"><i class="fab fa-2x fa-instagram-square instagram"></i></a>
-                <a href="https://www.reddit.com/r/XoloTokenComunity/"><i class="fab fa-2x fa-reddit reddit"></i></a>
+                <a href="https://t.me/xolotokena"><span class="fab fa-2x fa-telegram telegram"></span></a>
+                <a href="https://twitter.com/TokenXolo"><span class="fab fa-2x fa-twitter-square twitter"></span></a>
+                <a href="https://www.facebook.com/groups/4656468367700883"><span class="fab fa-2x fa-facebook-square facebook"></span></a>
+                <a href="https://discord.com/invite/55CndQd5vF"><span class="fab fa-2x fa-discord discord"></span></a>
+                <a href="https://www.instagram.com/xolotoken/"><span class="fab fa-2x fa-instagram-square instagram"></span></a>
+                <a href="https://www.reddit.com/r/XoloTokenComunity/"><span class="fab fa-2x fa-reddit reddit"></span></a>
                 
             </span>
         </ul>
@@ -42,7 +42,7 @@
 
     <section id="home" class="home">
 
-        <div class="landingPage">
+        <div class="landingPage" id="landingPage">
             
             <div class="content" id="landingPageContent">
                 <h2 class="text-golden">Welcome to Xolo Token</h2>
@@ -396,7 +396,7 @@
                   <ul class="social-icons">
                     <li><a href="https://t.me/XoloTokenOfficial" target="_blank"><i class="fab fa-telegram"></i></a></li>
                     <li><a href="https://twitter.com/JoseMtnzR" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <!--<li><a href="https://www.facebook.com/jose.martinezrivera.73" target="_blank"><i class="fab fa-facebook"></i></a></li>-->
+                    <li><a href="https://www.facebook.com/jose.martinezrivera.73" target="_blank"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://www.linkedin.com/mwlite/in/jos%C3%A9-alberto-mart%C3%ADnez-rivera-75b63a66" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>                                
                   </ul>
                 </div>
@@ -422,7 +422,7 @@
               </div>
             
             <div class="team">
-                <h2 onclick="showTeam()" class="teamHeader" id="teamHeader">Team <i class="fas fa-chevron-down"></i> </h2>
+                <h2 onclick="showTeam()" class="title text-golden teamHeader" id="teamHeader">Team <i class="fas fa-chevron-down text-golden"></i> </h2>
                 <div class="fullTeam" id="fullTeam">
                     <div class="row">
                         <div class="column">
@@ -484,7 +484,7 @@
                     </div>  
                 </div>
                 <div onclick="showPartners()" >
-                    <h2 class="partnersHeader" id="partnersHeader">Partners <i class="fas fa-chevron-down"></i> </h2>
+                    <h2 class="title text-golden partnersHeader" id="partnersHeader">Partners<i class="fas fa-chevron-down text-golden"></i> </h2>
                 </div>
                 
                 <div id="partners" class="partners">
@@ -536,29 +536,32 @@
                     <div class="text column column-75">
                         
                         <div class="text-small">
-                            <h3>
-                                If you'd like to donate to the Devs, send BNB or <span class="text-golden">XOLO</span> here. Thank you for your support!
-                            </h3>
-
-                            <span>
-                                <div class="button">
-                                    <a onclick="copyAddress()" style="text-decoration: none;">
-                                        <button><span>Copy Address</span></button>
-                                    </a>                        
-                                </div>    
-                            </span>
+                            <div>
+                                <h3>
+                                    If you'd like to donate to the Devs, send BNB or <span class="text-golden">XOLO</span> here. Thank you for your support!
+                                </h3>    
+                            </div>
+                            
+                            
+                            <div class="button">
+                                <a onclick="copyAddress()" style="text-decoration: none;">
+                                    <button><span>Copy Address</span></button>
+                                </a>                        
+                            </div>    
+                            
                             <div class="infos">
-                                <p>Receiving Address: 0x75e0cbd93aff23cb. . .</p>                            
+                                <p>Receiving Address: 0x75e0CBd93AFF23c. . .</p>                            
                                 <p>Accepted Token: <span class="bold">BNB or XOLO (BSC)</span></p>
                                 <p>Preferred Token: <span class="bold text-golden">XOLO</span></p>
                             </div>
                             
-                        </div>
-                        <div class="button bscscanBtn">
+                            <div class="button bscscanBtn">
                             <a href="https://bscscan.com/address/0x75e0cbd93aff23cb92a5bde8de0a810c4425e9eb" style="text-decoration: none;" target="_blank">
                                 <button><span>View On BscScan</span></button>
                             </a>                        
                         </div>
+                        </div>
+                        
                         
                     </div>
                 </div>
@@ -569,7 +572,7 @@
         <div class="preFooter">
             <div class="main-content">
                 <div class="left box">
-                    <h2>International Project</h2>
+                    <h2 class="fontSize-14">International Project</h2>
                      <div class="content">
                         <img src="img/ecuador-flag-medium.jpg" width="100%" alt="">
                         <img src="img/peru-flag-medium.jpg" width="100%" alt="">
@@ -582,9 +585,9 @@
                     
                 </div>
                 <div class="middle box">
-                    <h2>Social Media</h2>
+                    <!--<h2>Social Media</h2>-->
                     <div class="content">
-                        <p>Follow us in our social media so you can be up to date with our latest news.</p>
+                        <p class="fontSize-12">Follow us in our social media so you can be up to date with our latest news.</p>
                     </div>  
                 </div>
                  <div class="right box">
@@ -605,7 +608,7 @@
         <div class="content">
 
             <div class="text">
-                <p>Xolotoken © 2021 | All rights reserved | info@xolotoken.com &nbsp;</p>
+                <p class="fontSize-11">Xolotoken © 2021 | All rights reserved | info@xolotoken.com &nbsp;</p>
             </div>
 
         </div>       

@@ -20,7 +20,7 @@
 /* ----- Banner ----- */
 body
 {    
-    background-image: url(img/xoloitzcuintle-2.jpg);
+    background-image: url(img/xolo-fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-attachment:fixed;
@@ -110,7 +110,7 @@ header .openMenu
     cursor: pointer;
 }
 
-header .mainMenu .closeMenu, .icons i
+header .mainMenu .closeMenu, .icons span
 {
     display: none;
     cursor: pointer;
@@ -146,14 +146,16 @@ header .mainMenu .closeMenu, .icons i
     {
         display: block;
     }
-    header .icons i
+    header .icons a span
     {
-        display: inline;
-        padding: 12px;
+        display: inline-block;
+        flex-wrap: wrap;
+        padding: 5px;
         text-decoration: none;
         background: none;
 
     }
+
 }
 
 /* ----- Landing Page ----- */
@@ -863,7 +865,12 @@ div.partners
     -webkit-text-fill-color: transparent;
 }
 
-@media(max-width: 1000px)
+.qrSegment .text-small div+div
+{
+    padding-top: 10px ;
+}
+
+@media(max-width: 1100px)
 {
     .qrSegment .row
     {
@@ -881,6 +888,8 @@ div.partners
         align-content: center;
     }
 }
+
+
 /* ----- PreFooter -----*/
 
 .preFooter
@@ -925,9 +934,25 @@ div.partners
     vertical-align: middle;
 }
 
+.preFooter div.middle 
+{    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.preFooter .middle .box 
+{
+    vertical-align: middle;
+}
+
 .preFooter img
 {
     width: 5%;
+}
+
+.preFooter .social a
+{
+    margin-left: 10px;
 }
 @media(max-width: 800px)
 {
@@ -1034,4 +1059,17 @@ hr.wave
 .title
 {
     text-align: center;
+}
+
+.fontSize-14
+{
+    font-size: 14px;
+}
+.fontSize-12
+{
+    font-size: 12px;
+}
+.fontSize-11
+{
+    font-size: 11px;
 }
