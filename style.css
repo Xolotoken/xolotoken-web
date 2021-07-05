@@ -314,6 +314,7 @@ div.contenido
 .xoloitzcuintle .presentationImage img
 {
     vertical-align: middle;
+    padding: 20px;
     width: 250px;
     height: 250px;
 }
