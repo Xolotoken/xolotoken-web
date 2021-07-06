@@ -103,6 +103,6 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdownP").innerHTML = "EXPIRED";
+    document.getElementById("countdownP").innerHTML = "OPEN";
   }
 }, 1000);
