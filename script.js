@@ -58,6 +58,18 @@ function showPartners(){
     }
 }
 
+function showWallets(){
+    var partnersDiv = document.getElementById('walletsTable');
+    if (getComputedStyle(partnersDiv, null).display === "none")
+    {
+        partnersDiv.style.display = "block";
+    }
+    else
+    {
+        partnersDiv.style.display = "none"
+    }
+}
+
 function copyAddress()
 {
     var el = document.createElement('textarea');

@@ -35,7 +35,6 @@
 
         <ul class="mainMenu">
 
-            <li><a href="http://www.xolotoken.org/" class="alsoCloseMM"><img src="img/usa-circle.png" width="48px"></a></li>
             <li><a href="#home" class="alsoCloseMM">Inicio</a></li>
             <li><a href="#xoloitzcuintle" class="alsoCloseMM">Xoloitzcuintle</a></li>
             <li><a href="#philosophy" class="alsoCloseMM">White Paper</a></li>
@@ -43,6 +42,13 @@
             <li><a href="#ourTeam" class="alsoCloseMM">Equipo</a></li>
             <li><a href="#qrSegment" class="alsoCloseMM">Donaciones</a></li>
             <li><a href="#contact" class="alsoCloseMM">Contacto</a></li>
+            <li>
+                <a href="http://www.xolotoken.org/index-esp.html" class="alsoCloseMM">
+                    <p class="langCont">
+                        <span class="notMarked">ES</span> <span class="marked">EN</span> 
+                    </p>
+                </a>
+            </li>
 
             <div class="closeMenu"><i class="fas fa-2x fa-times"></i></div>
 
@@ -86,7 +92,7 @@
                     </div>
                 </div>
                 <div class="ytVideo column">
-                    <iframe width="560px" height="315px" src="https://www.youtube.com/embed/dwWYXiMKx4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560px" height="315px" src="https://www.youtube.com/embed/-ItcocpqoKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="column countdown">
                     
@@ -627,69 +633,71 @@
                 <div class="title">
                     <h2 class="text-golden">Billeteras Xolotoken</h2>
                 </div>
-                <div class="subTitle">
+                <div class="subTitle" onclick="showWallets()">
                     <h3>Transparencia total: un proyecto inédito, nunca antes visto.</h3>
+                    <h3 class="text-golden">Billeteras <i class="fas fa-chevron-down"></i></h3>
                 </div>
 <br><br>
-                <table id="t01">
-                    <tr>
-                        <th class="text-golden">Billetera</th>
-                        <th class="text-golden">Suministro de tokens</th> 
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x13a74a017c3FFCDE23ABe5424cFc6C529F03C381" target="_blank">Creación de XoloToken</a></td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0xeDe833CE32ca1e646DCDcd08932a963Ef719851b" target="_blank">Quema</a></td>
-                        <td>50%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x16106695fE2CA10b1De45269f36818F5CA5DBa6C" target="_blank">Venta Privada</a></td>
-                        <td>1%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x732e67d53BDC7ECEFfE4a791c3C6700a7baCfD68" target="_blank">Preventa Round #1</a></td>
-                        <td>5%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x4BB426a3c7ea939a5A5B93d0834D96900F7A9823" target="_blank">Preventa Round #2</a></td>
-                        <td>5%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x6fcCAbC1CEC70Ac4A51Ca9fFf1243530C2B7A5a2" target="_blank">Preventa Round #3</a></td>
-                        <td>20%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x789AdB7dCd5A21500a83Fe0eEDa2691Db9b63660" target="_blank">Marketing/Airdrops</a></td>
-                        <td>2%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0xf006Ecfef2AF9C1D9d1510eBeB01dFA184B5b756" target="_blank">Marketing/Sorteos</a></td>
-                        <td>1%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x515cEc6202c43D86bc8E701f39EB571994E1090C" target="_blank">Equipo</a></td>
-                        <td>4%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x13a74a017c3FFCDE23ABe5424cFc6C529F03C381" target="_blank">Venta Publica</a></td>
-                        <td>6%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x034f602f6c73fF7d05Bbea2A29a1B962cCEF4A12" target="_blank">Fundación del proyecto #1</a></td>
-                        <td>3%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0xcd8d1dCB9757d2DB38a0745C8f268328D157689e" target="_blank">Fundación del proyecto #2</a></td>
-                        <td>3%</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://bscscan.com/address/0x9b738D9170a64880Ea30414D70356686be1D7c7d" target="_blank">Fundación comunitaria</a></td>
-                        <td>2% por Transacción</td>
-                    </tr>
-                </table>
-                 
+                <div id="walletsTable">
+                    <table id="t01">
+                        <tr>
+                            <th class="text-golden">Billetera</th>
+                            <th class="text-golden">Suministro de tokens</th> 
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x13a74a017c3FFCDE23ABe5424cFc6C529F03C381" target="_blank">Creación de XoloToken</a></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0xeDe833CE32ca1e646DCDcd08932a963Ef719851b" target="_blank">Quema</a></td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x16106695fE2CA10b1De45269f36818F5CA5DBa6C" target="_blank">Venta Privada</a></td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x732e67d53BDC7ECEFfE4a791c3C6700a7baCfD68" target="_blank">Preventa Round #1</a></td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x4BB426a3c7ea939a5A5B93d0834D96900F7A9823" target="_blank">Preventa Round #2</a></td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x6fcCAbC1CEC70Ac4A51Ca9fFf1243530C2B7A5a2" target="_blank">Preventa Round #3</a></td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x789AdB7dCd5A21500a83Fe0eEDa2691Db9b63660" target="_blank">Marketing/Airdrops</a></td>
+                            <td>2%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0xf006Ecfef2AF9C1D9d1510eBeB01dFA184B5b756" target="_blank">Marketing/Sorteos</a></td>
+                            <td>1%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x515cEc6202c43D86bc8E701f39EB571994E1090C" target="_blank">Equipo</a></td>
+                            <td>4%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x13a74a017c3FFCDE23ABe5424cFc6C529F03C381" target="_blank">Venta Publica</a></td>
+                            <td>6%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x034f602f6c73fF7d05Bbea2A29a1B962cCEF4A12" target="_blank">Fundación del proyecto #1</a></td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0xcd8d1dCB9757d2DB38a0745C8f268328D157689e" target="_blank">Fundación del proyecto #2</a></td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://bscscan.com/address/0x9b738D9170a64880Ea30414D70356686be1D7c7d" target="_blank">Fundación comunitaria</a></td>
+                            <td>2% por Transacción</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
         </section>
@@ -727,9 +735,11 @@
             </div>
         </section>
 
-        <section>
-            <div style="position: relative; width: 100%; height: 0; padding-top: 12.5000%; padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEjYlSKmtU&#x2F;watch?embed"></iframe>
+        <hr class="wave">
+        
+        <section id="banner" class="banner">
+            <div class="content">
+                <img src="img/xolo-banner.gif" width="100%"></img>
             </div>
         </section>
 
