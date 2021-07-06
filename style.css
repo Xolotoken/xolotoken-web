@@ -38,7 +38,7 @@ header
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 30px 20px;
+    padding: 15px 20px;/* 30px 20px; */
     z-index: 2;
 }
 header.sticky
@@ -232,7 +232,7 @@ div.landingPage
     background: var(--golden);
 }
 
-@media(max-width: 1200px)
+@media(max-width: 1377px)
 {
     .landingPage .content h2
     {
