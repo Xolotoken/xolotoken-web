@@ -28,7 +28,7 @@ document.querySelectorAll('.closeMenu').forEach(item => {
     })
 })
 
-document.querySelectorAll('.alsoCloseMenu').forEach(item => {
+document.querySelectorAll('.alsoCloseMM').forEach(item => {
     item.addEventListener('click', event => {
         mainMenu.style.top = '-100%';
     })
