@@ -70,6 +70,18 @@ function showWallets(){
     }
 }
 
+function showContact(){
+    var partnersDiv = document.getElementById('contactUsDiv');
+    if (getComputedStyle(partnersDiv, null).display === "none")
+    {
+        partnersDiv.style.display = "block";
+    }
+    else
+    {
+        partnersDiv.style.display = "none"
+    }
+}
+
 function copyAddress()
 {
     var el = document.createElement('textarea');
