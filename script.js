@@ -97,7 +97,7 @@ function copyAddress()
 
 var x = setInterval(function() {
 
-    var end = new Date('07/07/2021 1:00 PM');
+    var end = new Date('07/09/2021 1:00 PM');
     var now = new Date();
     var nowUTC = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
     var distance = end - nowUTC;
