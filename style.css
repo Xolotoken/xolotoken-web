@@ -518,7 +518,7 @@ div.contenido
 
 
 /* ----- Tokenomics ----- */
-.container-graph
+.tokenomics .container-graph
 {
     width: 50%;
     display: flex;
@@ -527,6 +527,11 @@ div.contenido
     margin-left: auto;
     margin-right: auto;
 }
+.tokenomics .imgTokenomics
+{
+    text-align: center;
+}
+
 /* ----- Ecosystem ----- */
 .graph
 {
@@ -801,6 +806,7 @@ div.contenido
     border-radius: 50%;
     border: 5px solid var(--dark-golden);
     margin-top: 20px;
+    background-image: url(img/marmol-bg.jpg);
 
 }
   
