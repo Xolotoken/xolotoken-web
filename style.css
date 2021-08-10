@@ -757,21 +757,126 @@ div.contenido
 
 
 
+.others .container
+{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+  
+.others .card 
+{
+    background-color: #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+  
+.others .card__name 
+{
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+  
+.others .card__image 
+{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid var(--dark-golden);
+    margin-top: 20px;
+    background-image: url(img/marmol-bg.jpg);
+
+}
+  
+.others .social-icons 
+{
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+  
+.others .social-icons li 
+{
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1em;
+}
+  
+.others .social-icons i 
+{
+    color: #fff;
+    position: absolute;
+    top: 0.95em;
+    left: 0.96em;
+    transition: all 265ms ease-out;
+}
+  
+.others .social-icons a 
+{
+    display: inline-block;
+}
+ 
+.others .social-icons a:before 
+{
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, var(--dark-golden), var(--golden));
+    transition: all 265ms ease-out;
+}
+  
+.others .social-icons a:hover:before 
+{
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+  
+.others .social-icons a:hover i 
+{
+    transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    color: var(--dark-golden);
+    background: -webkit-linear-gradient(45deg, var(--dark-golden), var(--golden));
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+
+.others .comingSoon
+{
+    filter: blur(4px);
+}
+
+.others .row 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  /* Create four equal columns */
+.others .column {
+    flex: 30%;
+    padding: 15px;
+}
+  
+
+
 
 
 
 /* ----- Team ----- */
-
-
-
-
-
-
-
-
-
-
-
 
 .ourTeam .container
 {
