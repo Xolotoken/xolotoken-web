@@ -917,6 +917,7 @@ div.contenido
     -webkit-transform: scale(2.2);
     color: var(--dark-golden);
     background: -webkit-linear-gradient(45deg, var(--dark-golden), var(--golden));
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
 }
@@ -1048,6 +1049,7 @@ div.contenido
     -webkit-transform: scale(2.2);
     color: var(--dark-golden);
     background: -webkit-linear-gradient(45deg, var(--dark-golden), var(--golden));
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
 }
