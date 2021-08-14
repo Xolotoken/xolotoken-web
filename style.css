@@ -19,8 +19,8 @@
 }
 /* ----- Banner ----- */
 body
-{    
-    background-image: url(img/Xolo-Durmiendo.jpg);
+{   
+    background-image: url('img/Xolo-Durmiendo.jpg');
     background-color: black;
     background-size:contain; 
     background-repeat: no-repeat;
@@ -29,14 +29,6 @@ body
     /*background-color: #A3A3A3;*/
 }
 
-@media(max-width: 1250px)
-{
-    body
-{    
-    background-image: url(img/Xolo-Durmiendo.png);
-    /*background-color: #A3A3A3;*/
-}
-}
 
 header
 {
@@ -57,6 +49,7 @@ header.sticky
     background: var(--dark-grey);
     color: #000;
 }
+
 header .logo
 {
     position: relative;
@@ -272,10 +265,20 @@ div.landingPage
 }
 .landingPage .buttons
 {
-    display: flex;
     text-align: center;
-    margin-top: 10px;
+    width: 50%;
+    align-content: center;
+}
 
+.landingPage .Brow
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.landingPage .Bcolumn
+{
+    flex: 0 0 33.3333%;
 }
 
 .landingPage .button
@@ -284,8 +287,7 @@ div.landingPage
     padding: 12px;
     border-radius: 100px;
     background: none;
-    display: inline-block;
-    margin: 5px 10px 5px;
+    margin: 5px 5px 5px;
     
     -webkit-transition: background-color .3s ease-out;
     -moz-transition: background-color .3s ease-out;
@@ -343,6 +345,16 @@ div.landingPage
     {
         font-size: 18px;
     }
+    .landingPage .buttons
+    {
+        text-align: center;
+        width: 100%;
+        align-content: center;
+    }
+    .landingPage .Bcolumn
+    {
+        flex: 0 0 5%;        
+    }
 }
 
 @media(max-width: 600px)
@@ -385,6 +397,7 @@ div.landingPage
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 55px;
 }
 
   /* Create four equal columns */
@@ -402,6 +415,11 @@ div.landingPage
     flex: 100%;
 }
 
+.landingPage .liquidity
+{
+    font-size: 1.5em;
+    text-align: center;
+}
 
 /* ----- allContent ----- */
 div.test
@@ -515,6 +533,38 @@ div.contenido
     text-align: left;
 }
 
+/* ----- Audit ----- */
+.audit 
+{
+    text-align: center;
+}
+.audit .buttons
+{
+
+    text-align: center;
+    margin-top: 10px;
+}
+
+.audit .button
+{
+    border: 2px solid var(--golden);
+    padding: 12px;
+    border-radius: 100px;
+    background: none;
+    display: inline-block;
+    margin: 5px 10px 5px;
+    
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
+}
+.audit .button:hover
+{
+    background: var(--golden);
+}
+
+
 
 
 /* ----- Tokenomics ----- */
@@ -530,6 +580,37 @@ div.contenido
 .tokenomics .imgTokenomics
 {
     text-align: center;
+}
+
+/* ----- Prices ----- */
+
+.prices h3
+{
+    text-align: center;
+}
+.prices .text
+{
+    text-align: center;
+    font-size: 1.5em;
+}
+.prices .row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prices div.column
+{
+    padding: 5px;
+    margin-left: 10px;
+}
+.prices .emails
+{
+    font-weight: bold;
+}
+.prices #pricesUsDiv
+{
+    display: none;
 }
 
 /* ----- Ecosystem ----- */
@@ -718,20 +799,22 @@ div.contenido
 
 /* ----- Community ----- */
 
-.others .row
+.others .row 
 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-
 }
-.others .column
+
+  /* Create four equal columns */
+.others .column 
 {
-    flex: 50%;
-    padding: 25px;
+    flex: 25%;
+    padding: 15px;
     display: inline-block;
 }
+  
 .others .presentationImage
 {
     text-align: center;
@@ -755,11 +838,9 @@ div.contenido
 
 }
 
-
-
 .others .container
 {
-    display: grid;
+ 
     grid-template-columns: 300px 300px 300px;
     grid-gap: 50px;
     justify-content: center;
@@ -859,18 +940,28 @@ div.contenido
     filter: blur(4px);
 }
 
-.others .row 
+.others .sponsors .sponsorsImages
+{
+    text-align: center;
+}
+
+.others .sponsors .sponsorsImages img
+{
+    max-width: 200px;
+}
+
+
+.ourTeam .foundations .row 
 {
     display: flex;
     flex-wrap: wrap;
 }
 
   /* Create four equal columns */
-.others .column {
+.ourTeam .foundations .column {
     flex: 30%;
     padding: 15px;
 }
-  
 
 
 
@@ -1286,13 +1377,13 @@ div.partners
     margin-right: auto;
     width: 600px;
 }
-.banner img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
+
+.banner .certificactions
+{
+    width: fit-content;
 }
+
 
 @media(max-width: 1250px)
 {
@@ -1327,9 +1418,10 @@ div.partners
 {
     flex: 0 20%;
 }
-.preFooter .middle
+.preFooter .middle,
+.preFooter .middleL
 {
-    flex: 1;
+    flex: .5;
 }
 .preFooter .right
 {
@@ -1347,20 +1439,35 @@ div.partners
     vertical-align: middle;
 }
 
-.preFooter div.middle 
+.preFooter div.middle,
+.preFooter div.middleL  
 {    
     display: flex;
     justify-content: center; 
     align-items: center;
 }
-.preFooter .middle .box 
+.preFooter .middle .box,
+.preFooter .middleL .box 
 {
     vertical-align: middle;
 }
 
-.preFooter img
+.preFooter .content img
 {
     width: 7%;
+}
+
+.preFooter .middleL img
+{
+    width: 100%;
+    justify-content: right;
+}
+
+.preFooter div.middleL 
+{    
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
 }
 
 .preFooter .social a
@@ -1378,6 +1485,11 @@ div.partners
     {
         background-color: #3F3F3F;
     }
+    .preFooter div.middleL 
+    {
+        justify-content: center;
+    }
+        
 }
 
 /* ----- Footer ----- */
@@ -1439,6 +1551,24 @@ span.reddit:hover
 {
     color: #FF4500
 }
+span.medium:hover
+{
+    color: #C4E2FF
+}
+
+a.dmca-badge
+{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+a>img.img-responsive
+{
+    max-width: 65px;
+    max-height: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
 
 hr.wave
 {
@@ -1457,7 +1587,8 @@ hr.wave
 
 .anchor
 {
-    scroll-margin-top: 58px;
+    scroll-margin-top: 120px;
+    /*scroll-margin-top: 58px;*/
 }
 
 .bold
@@ -1500,11 +1631,23 @@ hr.wave
     font-size: 48px;
 }
 
-
-
-
-
-
+.slidingMessage marquee
+{
+    /*background-color: var(--dark-grey); 
+    color: var(--golden); */
+    background-color: #0000FF;
+    color: #FFFF00;
+    margin-top: 80px; 
+    position: fixed;  
+    font-size: 2em;
+    z-index: 500;
+    transition: .6s ease-out;
+    font-weight: 800;
+}
+.slidingMessage marquee.scrolled
+{
+    margin-top: 71px;
+}
 
 
 

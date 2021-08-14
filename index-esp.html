@@ -121,6 +121,7 @@
         <ul class="mainMenu">
 
             <li><a href="#home" class="alsoCloseMM">Inicio</a></li>
+            <li><a href="#audit" class="alsoCloseMM">Auditoria</a></li>
             <li><a href="#xoloitzcuintle" class="alsoCloseMM">Xoloitzcuintle</a></li>
             <li><a href="#philosophy" class="alsoCloseMM">White Paper</a></li>
             <li><a href="#routePhase" class="alsoCloseMM">Hoja de Ruta</a></li>
@@ -139,13 +140,20 @@
 
             <span class="icons">
 
-                <a href="https://t.me/xolotokena"><span class="fab fa-2x fa-telegram telegram"></span></a>
+                <a href="https://t.me/xolotokengroup"><span class="fab fa-2x fa-telegram telegram"></span></a>
                 <a href="https://twitter.com/TokenXolo"><span class="fab fa-2x fa-twitter-square twitter"></span></a>
                 <a href="https://www.facebook.com/groups/4656468367700883"><span class="fab fa-2x fa-facebook-square facebook"></span></a>
                 <a href="https://discord.com/invite/55CndQd5vF"><span class="fab fa-2x fa-discord discord"></span></a>
                 <a href="https://www.instagram.com/xolotoken/"><span class="fab fa-2x fa-instagram-square instagram"></span></a>
                 <a href="https://www.reddit.com/r/XoloTokenComunity/"><span class="fab fa-2x fa-reddit reddit"></span></a>
-                
+                <a href="https://medium.com/@XoloTokenXOLO" target="_blank">
+                    <span class="medium">
+                        <svg width="27" height="27" viewBox="0 0 16 16" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3788 4.39113L14.4001 3.41406V3.2002H10.862L8.34036 9.47646L5.47156 3.2002H1.7617V3.41406L2.95476 4.85033C3.07103 4.95646 3.13183 5.11166 3.11636 5.26793V10.9122C3.15316 11.1154 3.08703 11.3245 2.9441 11.4722L1.6001 13.101V13.3122H5.41076V13.0983L4.06676 11.4722C3.92116 11.3239 3.85236 11.1186 3.8817 10.9122V6.03006L7.22676 13.3149H7.61556L10.4918 6.03006V11.8333C10.4918 11.9863 10.4918 12.0178 10.3916 12.1181L9.3569 13.1191V13.3335H14.3766V13.1197L13.3793 12.1431C13.2918 12.077 13.2465 11.9661 13.2652 11.8583V4.67593C13.2465 4.56766 13.2913 4.45673 13.3788 4.39113V4.39113Z" fill="#FFFFFF"></path>
+                        </svg>
+                    </span>                            
+                </a>
+
             </span>
         </ul>
     </header>
@@ -153,6 +161,12 @@
 
     <section id="home" class="home">
 
+        <div class="slidingMessage" id="marqueeMessage">
+            
+            <marquee id="slidingMessageMarquee" direction="left" height="50" width="100%" scrollamount="12"><p id="slidingMessage" style="color: yellow;">Pre-Venta Agosto 25 13:00 UTC</p></marquee>
+            
+        </div>
+        
         <div class="landingPage" id="landingPage">
             <div class="row">
                 <div class="content column" id="landingPageContent">
@@ -163,40 +177,47 @@
                     </p>
                     
                     <div class="buttons">
-                        <div class="button">
-                            <a class="buttonCulo" style="text-decoration: none;">
-                                <p class="">Airdrop</p>
-                            </a>
-                            
-                            <!--
-                                <a href="#conformityAgreement" class="buttonCulo" style="text-decoration: none;">
-                                <p class="">Venta Privada</p>
+                        <div class="Brow">
+                            <div class="button Bcolumn">
+                                <a href="https://dxsale.app/app/v2_9/defipresale?saleID=2201&chain=BSC" class="buttonCulo" style="text-decoration: none;" target="_blank" >
+                                    <p class="">Preventa</p>
                                 </a>
-                            -->
-                            
-                        </div>   
-        
-                        <div class="button">
-                            <a href="https://bscscan.com/token/0x2d37b9086f6069f98f61f6f5733fdde14e35c0cc" style="text-decoration: none;" target="_blank">
-                                <p class="">BscScan</p>
-                            </a>
+                                <!--
+                                <a href="#conformityAgreement" class="buttonCulo" style="text-decoration: none;" >
+                                    <p class="">Airdrop</p>
+                                </a>
+                                -->
+                            </div>   
+                            <div class="button Bcolumn">
+                                <a href="https://bscscan.com/token/0x2d37b9086f6069f98f61f6f5733fdde14e35c0cc" style="text-decoration: none;" target="_blank">
+                                    <p class="">AirDrop</p>
+                                </a>
+                            </div>
+            
+                            <div class="button Bcolumn">
+                                <a href="https://bscscan.com/token/0x2d37b9086f6069f98f61f6f5733fdde14e35c0cc" style="text-decoration: none;" target="_blank">
+                                    <p class="">BscScan</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="ytVideo column">
                     <iframe width="560px" height="315px" src="https://www.youtube.com/embed/-ItcocpqoKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="column countdown" style="display: none;">
+                <div class="column countdown" id="countdown">
                     
-                    <span><h2 class="text-golden countdonwTitle">VENTA PRIVADA</h2></span>
+                    <!--<span><h2 class="text-golden countdonwTitle">VENTA PRIVADA</h2></span>-->
+                    <span><h3 class="countDownMinMax text-golden" id="countdownUpperText">LA PREVENTA INICIA EN AGOSTO 25, 13h00 UTC</h3></span>
                     <h2><p id="countdownP" class="countdownP"></p></h2>
-                    <span><h3 class="countDownMinMax">Min. 0.2 BNB  -  Max. 2 BNB</h3></span>
+                    <span><h3 class="countDownMinMax">Min. 0.05 BNB  -  Max. 5 BNB</h3></span>
                 </div>
 
-            </div>
+                <div class="liquidity text-golden">
+                    LIQUIDEZ BLOQUEADA DURANTE 70 AÑOS
+                </div>
 
-
-            
+            </div>            
         </div>        
     </section>
     <div class="test">
@@ -333,6 +354,28 @@
 
         <hr class="wave">
 
+        <section id="audit" class="audit anchor">
+            <div class="content">
+                <div class="title">
+                    <h2 class="text-golden">Auditoría del Proyecto</h2>
+                </div>
+                <p>
+                    Contrato inteligente auditado por TECH AUDIT
+                </p>
+
+                <div class="buttons">
+                        
+                    <div class="button">
+                        <a href="docs/TechAudit_Xolo.pdf" style="text-decoration: none;" download="XoloToken TechAudit Doc">
+                            <p class="">TECH AUDIT Doc.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="wave">
+
         <section id="tokenomics" class="tokenomics anchor">
             <div class="content">
                 <div class="title">
@@ -340,11 +383,47 @@
                 </div>
                 
                 <div class="imgTokenomics">
-                    <img src="img/tokenomics.png" width="100%">
+                    <img src="img/tokenomics.png" width="80%">
                 </div>
                 
             </div>
         </section>
+
+        <section id="prices" class="prices">
+            <div class="content">
+                <div class="text">
+                    <p class="text-golden">Precio de $ XOLO en preventa</p>
+                    <p>Compra en preventa con 20% de descuento</p>
+                </div>
+                <div id="pricesDiv">
+                    <div class="row">
+                        <div class="deps column">
+                            <p class="text-golden">Precio de preventa:</p>
+                            <p class="text-golden">Precio normal:</p>
+                            <p class="text-golden">Compra Min.:</p>
+                            <p class="text-golden">Compra Max.:</p>
+                            <p class="text-golden">Inicio de preventa:</p>
+                            <p class="text-golden">Fin de preventa:</p>
+                            <p class="text-golden">Desbloqueo de liquidez:</p>
+                        </div>
+    
+                        <div class="emails column">
+                            <p>240,000,000,000 $XOLO ppr BNB</p>
+                            <p>200,000,000,000 $XOLO ppr BNB</p>
+                            <p>0.05 BNB</p>
+                            <p>5.00 BNB</p>
+                            <p>25 Ago 2021 13:00 UTC</p>
+                            <p>01 Sep 2021 07:59 UTC</p>
+                            <p>01 Sep 2091 07:59 UTC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Los tokens que no están pre-vendidos se queman</p>
+                </div>                
+            </div>
+        </section>
+
 
         <hr class="wave">
 
@@ -457,53 +536,341 @@
                 <div class="title">
                     <h2 class="text-golden">Ecosistema</h2>
                 </div>
-                <div class="community row">
+                <div class="community">
                     
-                    <div class="text column">
+                    <div class="text">
                         <h2 class="text-golden">Comunidad</h2>
                         <p>
                             Nuestros holders son una pieza importante en el proyecto, ya que son los que le darán el valor a 
                             <span class="text-golden">XOLO TOKEN</span> (XOLO) al mantener en HOLD sus tokens.
                         </p>
                     </div>
-                    <div class="presentationImage column">
-                        <img src="img/community-2.png" width="100%" alt="" class="image">
+                    <div class="presentationImage">
+                        <img src="img/community-3.png" width="100%" alt="" class="image">
                     </div>
 
                 </div>
                 
-                <div class="devTeam row">
+                <div class="devTeam">
 
-                    <div class="text column">
+                    <div class="text">
                         <h2 class="text-golden">Equipo Desarrollador</h2>
                         <p>
                             Contamos con un amplio equipo de programadores, diseñadores, creadores de contenido administradores de redes 
                             sociales con experiencia en blockchain y criptomonedas trabajando y dando soporte a la comunidad.
                         </p>
                     </div>
-                    <div class="presentationImage column">
-                        <img src="img/developer-team-2.png" width="100%" alt="" class="image">
-                    </div>
+
+                    <section id="ourTeam" class="ourTeam anchor">
+                        
+                        <div class="title">
+                            <h2 class="text-golden">Fundadores</h2>
+                        </div>
+            
+                        <div class="container row">
+            
+            
+                            <div class="card column">
+                                <img src="img/manuel-merchan-2.png" alt="Person" class="card__image">
+                                <p class="card__name">Manuel Merchan</p>
+                                <div class="grid-container">
+                            
+                                  <div class="grid-child-posts">
+                                    CEO
+                                  </div>
+                            
+                                </div>
+                                <ul class="social-icons">
+
+                                  <li><a href="https://t.me/ManuMerchan" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                                  <li><a href="https://twitter.com/ManuelMerchanC" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                  <li><a href="https://www.facebook.com/manuelmerchancampoverde" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                  <li><a href="https://www.linkedin.com/in/manuel-merchan-campoverde-81075520b/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    
+                                </ul>
+                            </div>
+                    
+                    
+                    
+                            <div class="card column">
+                                <img src="img/jose-martinez.png" alt="Person" class="card__image">
+                                <p class="card__name">José Martinez</p>
+                                <div class="grid-container">
+                            
+                                    <div class="grid-child-posts">
+                                        Administrador de la comunidad
+                                    </div>
+                            
+                                </div>
+
+                                <ul class="social-icons">
+                                    <li><a href="https://t.me/XoloTokenOfficial" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                                    <li><a href="https://twitter.com/JoseMtnzR" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/jose.martinezrivera.73" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/mwlite/in/jos%C3%A9-alberto-mart%C3%ADnez-rivera-75b63a66" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>                                
+                                </ul>
+                            </div>
+                    
+                            <div class="card column">
+                                <img src="img/eduardo-diaz.png" alt="Person" class="card__image">
+                                <p class="card__name">Eduardo Díaz</p>
+                                <div class="grid-container">
+                            
+                                    <div class="grid-child-posts">
+                                        Tesorero
+                                    </div>
+                      
+                                </div>
+                                <ul class="social-icons">
+
+                                    <li><a href="https://t.me/EduardoDiazA" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                                    <li><a href="https://twitter.com/hunterreas" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/eduardodiazaranda" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/eduardo-diaz-2674b819a" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="team">
+                            <h2 onclick="showTeam()" class="title text-golden teamHeader" id="teamHeader">Equipo<i class="fas fa-chevron-down text-golden"></i> </h2>
+                            <div class="fullTeam" id="fullTeam">
+                                <div class="row">
+                                    <div class="column">
+                                        <!--
+                                        <p class="names">Zuleyma Gomez</p>
+                                        <p class="role"> Official spanish voice</p>
+                                        -->
+                                        <p class="names">Francisco García</p>
+                                        <p class="role">Moderador de redes sociales</p>
+            
+                                        <p class="names">Doneld Díaz</p>
+                                        <p class="role">Administrador de Fundaciones</p>
+            
+                                        <p class="names">Jhony Hernandez</p>
+                                        <p class="role">Marketing y publicidad</p>
+            
+                                        <p class="names">Ross Galván</p>
+                                        <p class="role">Marketing y publicidad</p>
+                                        
+                                    </div>
+
+                                    <div class="column">
+                                        <p class="names">Claudia Aune</p>
+                                        <p class="role">Vocera Oficial de Inglés</p>
+                                        <!--
+                                        <p class="names">Edwin Zullcaray</p>
+                                        <p class="role">Social media administrator</p>
+                                        -->
+                                        <p class="names">July Uzcategui</p>
+                                        <p class="role">Administrador de Fundaciones</p>
+            
+                                        <!--
+                                        <p class="names">Leonardo Montes</p>
+                                        <p class="role">Marketing and advertising</p>
+                                        -->
+                                        <!--
+                                        <p class="names">José Hernandez</p>
+                                        <p class="role">Design and image</p>
+                                        -->
+                                        <!--
+                                        <p class="names">Luis Arias</p>
+                                        <p class="role">Artist</p>
+                                        -->
+                                        <p class="name">Carlos Tigrillo</p>
+                                        <p class="role">Diseño e imagen</p>
+                                    </div>
+                                    <div class="column">
+                                        <!--
+                                        <p class="names">Edwin Fuentes</p>
+                                        <p class="role">Social media administrator</p>
+                                        -->
+                                        <p class="names">Daniel Escorche</p>
+                                        <p class="role">Moderador de redes sociales</p>
+                                        
+                                        <p class="names">Elizabeth Polegre</p>
+                                        <p class="role">Administrador de Fundaciones</p>
+                                        
+                                        <p class="names">Miguel Jayme</p>
+                                        <p class="role">Marketing y publicidad</p>
+                                        
+                                        <p class="names">Ordubay Osorio</p>
+                                        <p class="role">Youtuber</p>
+            
+                                        <p class="names">Jesús Rivera</p>
+                                        <p class="role">Programador</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div onclick="showPartners()" >
+                                <h2 class="title text-golden partnersHeader" id="partnersHeader">Socios<i class="fas fa-chevron-down text-golden"></i> </h2>
+                            </div>
+                            
+                            <div id="partners" class="partners">
+                                <div class="row">
+                                    <div class="column left-col">
+                                        <p>Adán Reyes</p>
+                                        <p>Andrés Medina</p>
+                                        <p>Brayam Ramírez</p>
+                                        <p>Edwin Lievano</p>
+                                        <p>Fabio Lara</p>
+                                        <p>Fernando Herrera</p>
+                                        <p>Zuleyma Gomez</p>
+                                        <p>Edwin Zullcaray</p>
+
+                                    </div>
+                                    <div class="column middle-col">
+                                        <p>Francis Hernandez</p>
+                                        <p>Isauda Cázares</p>
+                                        <p>Jaime Carrasco</p>
+                                        <p>Jhunior Vilca</p>
+                                        <p>Juan López</p>
+                                        <p>Lorena Alemán</p>
+                                        <p>Leonardo Montes</p>
+                                        <p>José Hernandez</p>
+                                    </div>
+                                    <div class="column right-col">
+                                        <p>Luis Rodriguez</p>
+                                        <p>Miguel Bautista</p>
+                                        <p>Omar González</p>
+                                        <p>Paula Merchán</p>
+                                        <p>René Ortega</p>
+                                        <p>Wilfredys González</p>
+                                        <p>Luis Arias</p>
+                                        <p>Edwin Fuentes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>                    
 
                 </div>
 
-                <div class="fundations row">
+                <div class="foundations">
                     
-                    <div class="text column">
+                    <div class="text">
                         <h2 class="text-golden">Fundaciones</h2>
                         <p>
                             Las fundaciones son lo más importante ya que le dan todo el sentido a este proyecto y la finalidad que tienen, 
                             la cual es ayudar a personas y perritos.
                         </p>
                     </div>
-                    <div class="presentationImage column">
-                        <img src="img/fundations-2.png" width="100%" alt="" class="image">
-                    </div>
 
-                </div>                
+                    <div class="foundationsCards">
+                        <div class="container row">
+                    
+                            <div class="card column">
+                                <img src="img/casa_iglesia.png" alt="Person" class="card__image">
+                                <p class="card__name">Casa Iglesia</p>
+                                <div class="grid-container">
+                            
+                            
+                                </div>
+                                <ul class="social-icons">
+                                  <li><a href="https://t.me/Casaiglesia" target="_blank"><i class="fab fa-telegram"></i></a></li>                                  
+                                  <li><a href="https://www.facebook.com/casaiglesia.unhogardedios/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                  <li><a href="https://instagram.com/casa.iglesia" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    
+                                </ul>
+                              </div>
+                    
+                            <div class="card column">
+                              <img src="img/luisana_camacho.png" alt="Person" class="card__image">
+                              <p class="card__name">Luisiana Camacho</p>
+                    
+                              <ul class="social-icons">
+                                <li><a href="https://www.instagram.com/tupsicopedagoga44/" target="_blank"><i class="fab fa-instagram"></i></a></li>                                                             
+                              </ul>
+                            </div>
+                    
+                            <div class="card column">
+                                <div class="comingSoon">
+                                    <img src="img/dr_sonrisa.png" alt="Person" class="card__image">
+                                </div>
+                                
+                                <p class="card__name">Coming soon...</p>
+                    
+                                <ul class="social-icons">
+                                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>                   
+                                </ul>
+                            </div>
+                    
+                            <div class="card column">
+                                <div class="comingSoon">
+                                    <img src="img/francisca_duarte.png" alt="Person" class="card__image">
+                                </div>
+                                
+                                <p class="card__name">Coming soon...</p>
+                    
+                                <ul class="social-icons">
+                                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sponsors">
+                    <div class="text">
+                       <h2 class="text-golden">Patrocinadores</h2>
+                       <p>
+                            Estos son los primeros comercios que aceptarán XOLOTOKEN $XOLO... somos el primer memetoken de uso real.
+                           <!--
+                               Patrocinadores:
+                               Estos son las primeros comercios que aceptarán XOLOTOKEN $XOLO .... somos el primer memetoken de uso real
+                           -->
+                       </p>
+                       <div class="sponsorsImages">
+                           <div class="row">
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/campos_VLN.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/carlethyca.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/elisa_rivera.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/falsies_nails.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/nachoslm.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/rrfroorcare.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/radio_antorcha_azul.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/ross_galvan.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/sabor_colombiano.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/pediatra_virtual.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/kandy_productions.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/par_de_gallos.png" alt="">
+                               </div>
+                               <div class="column">
+                                   <img class="sponsorImage" src="img/show_arepa.png" alt="">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
             </div>
         </section>
-
+<!--
         <hr class="wave">
 
         <section id="ourTeam" class="ourTeam anchor">
@@ -670,7 +1037,7 @@
                 
             </div>
         </section>
-
+-->
         <hr class="wave">
 
         <section id="qrSegment" class="qrSegment anchor">
@@ -748,6 +1115,7 @@
                             <td><a href="https://bscscan.com/address/0x16106695fE2CA10b1De45269f36818F5CA5DBa6C" target="_blank">Venta Privada</a></td>
                             <td>1%</td>
                         </tr>
+                        <!--
                         <tr>
                             <td><a href="https://bscscan.com/address/0x732e67d53BDC7ECEFfE4a791c3C6700a7baCfD68" target="_blank">Preventa Round #1</a></td>
                             <td>5%</td>
@@ -760,6 +1128,7 @@
                             <td><a href="https://bscscan.com/address/0x6fcCAbC1CEC70Ac4A51Ca9fFf1243530C2B7A5a2" target="_blank">Preventa Round #3</a></td>
                             <td>20%</td>
                         </tr>
+                        -->
                         <tr>
                             <td><a href="https://bscscan.com/address/0x789AdB7dCd5A21500a83Fe0eEDa2691Db9b63660" target="_blank">Marketing/Airdrops</a></td>
                             <td>2%</td>
@@ -772,10 +1141,12 @@
                             <td><a href="https://bscscan.com/address/0x515cEc6202c43D86bc8E701f39EB571994E1090C" target="_blank">Equipo</a></td>
                             <td>4%</td>
                         </tr>
+                        <!--
                         <tr>
                             <td><a href="https://bscscan.com/address/0x13a74a017c3FFCDE23ABe5424cFc6C529F03C381" target="_blank">Venta Publica</a></td>
                             <td>6%</td>
                         </tr>
+                        -->
                         <tr>
                             <td><a href="https://bscscan.com/address/0x034f602f6c73fF7d05Bbea2A29a1B962cCEF4A12" target="_blank">Fundación del proyecto #1</a></td>
                             <td>3%</td>
@@ -833,8 +1204,10 @@
             <div class="content">
                 <img src="img/xolo-banner.gif" width="100%"></img>
             </div>
-            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
-            <div id="coinmarketcap-widget-marquee" coins="1,1027,2,5966,825,4687,1839,7186,74,8757,5994,8378,9892,9574,9386,9711,8397,8966,10489,9436,10407" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
+            <div class="certifications">
+                <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
+                <div id="coinmarketcap-widget-marquee" coins="1,1027,2,5966,825,4687,1839,7186,74,8757,5994,8378,9892,9574,9386,9711,8397,8966,10489,9436,10407" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
+            </div>
         </section>
 
     </div>
@@ -860,9 +1233,22 @@
                         <img src="https://www.countryflags.io/ve/flat/64.png">
                         <img src="https://www.countryflags.io/gt/flat/64.png">
                         <img src="https://www.countryflags.io/us/flat/64.png">
+
                      </div>                 
                     
                 </div>
+
+
+                <div class="middleL box certifs">
+                    <a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=xolotoken.org','SiteLock','width=600,height=600,left=160,top=170');" >
+                        <img class="img-responsive" alt="SiteLock" title="SiteLock" src="//shield.sitelock.com/shield/xolotoken.org" />
+                    </a>
+                    <a href="//www.dmca.com/Protection/Status.aspx?ID=e6269c4b-6c10-44d5-8d95-c9c5de4d562b" title="DMCA.com Protection Status" class="dmca-badge"> 
+                        <img src ="https://images.dmca.com/Badges/DMCA_badge_grn_80w.png?ID=e6269c4b-6c10-44d5-8d95-c9c5de4d562b"  alt="DMCA.com Protection Status" />
+                    </a>  
+                    <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script> 
+                </div>
+
                 <div class="middle box">
                     <!--<h2>Social Media</h2>-->
                     <div class="content">
@@ -871,13 +1257,19 @@
                 </div>
                  <div class="right box">
                     <div class="social">
-                        <a href="https://t.me/xolotokena" target="_blank"><span class="fab fa-2x fa-telegram telegram"></span></a>
+                        <a href="https://t.me/xolotokengroup" target="_blank"><span class="fab fa-2x fa-telegram telegram"></span></a>
                         <a href="https://twitter.com/TokenXolo" target="_blank"><span class="fab fa-2x fa-twitter-square twitter"></span></a>
                         <a href="https://www.facebook.com/groups/4656468367700883" target="_blank"><span class="fab fa-2x fa-facebook-square facebook"></span></a>
                         <a href="https://discord.com/invite/55CndQd5vF" target="_blank"><span class="fab fa-2x fa-discord discord"></span></a>
                         <a href="https://www.instagram.com/xolotoken/" target="_blank"><span class="fab fa-2x fa-instagram-square instagram"></span></a>
                         <a href="https://www.reddit.com/r/XoloTokenComunity/" target="_blank"><span class="fab fa-2x fa-reddit reddit"></span></a>
-                        
+                        <a href="https://medium.com/@XoloTokenXOLO" target="_blank">
+                            <span class="medium">
+                                <svg width="27" height="27" viewBox="0 0 16 16" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3788 4.39113L14.4001 3.41406V3.2002H10.862L8.34036 9.47646L5.47156 3.2002H1.7617V3.41406L2.95476 4.85033C3.07103 4.95646 3.13183 5.11166 3.11636 5.26793V10.9122C3.15316 11.1154 3.08703 11.3245 2.9441 11.4722L1.6001 13.101V13.3122H5.41076V13.0983L4.06676 11.4722C3.92116 11.3239 3.85236 11.1186 3.8817 10.9122V6.03006L7.22676 13.3149H7.61556L10.4918 6.03006V11.8333C10.4918 11.9863 10.4918 12.0178 10.3916 12.1181L9.3569 13.1191V13.3335H14.3766V13.1197L13.3793 12.1431C13.2918 12.077 13.2465 11.9661 13.2652 11.8583V4.67593C13.2465 4.56766 13.2913 4.45673 13.3788 4.39113V4.39113Z" fill="#FFFFFF"></path>
+                                </svg>
+                            </span>                            
+                        </a>
                     </div>
                  </div>
             </div>

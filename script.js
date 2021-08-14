@@ -1,6 +1,8 @@
 window.addEventListener("scroll", function(){
     var header = this.document.querySelector("header");
+    var sliding = this.document.getElementById('slidingMessageMarquee');
     header.classList.toggle("sticky", window.scrollY > 0);
+    sliding.classList.toggle("scrolled", window.scrollY > 0);
 })
 
 window.addEventListener("scroll", function(){
@@ -97,24 +99,41 @@ function copyAddress()
 
 var x = setInterval(function() {
 
-    var end = new Date('07/09/2021 1:00 PM');
+    var end = new Date('08/25/2021 01:00:00 PM');
+    var endPresale = new Date('09/01/2021 01:00:00 PM');
     var now = new Date();
     var nowUTC = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-    var distance = end - nowUTC;
+    var distancePresale = end - nowUTC;
+    var distanceEndPresale = endPresale - nowUTC;
 
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var days = Math.floor(distancePresale / (1000 * 60 * 60 * 24));
+
+  var hours = Math.floor((distancePresale % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+  var minutes = Math.floor((distancePresale % (1000 * 60 * 60)) / (1000 * 60));
+
+  var seconds = Math.floor((distancePresale % (1000 * 60)) / 1000);
+
 
   // Display the result in the element with id="demo"
   document.getElementById("countdownP").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
-  if (distance < 0) {
+  if (distancePresale < 0) {
+    
+    document.getElementById("countdownP").innerHTML = "PRESALE LIVE";
+    document.getElementById("slidingMessage").innerHTML = "PRESALE LIVE";
+    document.getElementById("slidingMessage").style.color = "#FFFF00";
+    document.getElementById("countdownUpperText").innerHTML = "PRE-SALE ENDS ON SEPTEMBER 1, 13h00 UTC";
+    
+  }
+
+  if (distanceEndPresale < 0) {
     clearInterval(x);
-    document.getElementById("countdownP").innerHTML = "OPEN";
+    document.getElementById("marqueeMessage").style.display = "none";
+    document.getElementById("countdown").style.display = "none";
+    document.body.style.backgroundImage = "url('img/Xolo-Despierto.jpg')";
   }
 }, 1000);
