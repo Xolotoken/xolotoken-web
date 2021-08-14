@@ -20,7 +20,7 @@
 /* ----- Banner ----- */
 body
 {   
-    background-image: url('img/Xolo-Durmiendo.jpg');
+    background-image: url(img/Xolo-Durmiendo.jpg);
     background-color: black;
     background-size:contain; 
     background-repeat: no-repeat;
@@ -1647,6 +1647,11 @@ hr.wave
 .slidingMessage marquee.scrolled
 {
     margin-top: 71px;
+}
+
+html 
+{
+    scroll-behavior: smooth;
 }
 
 

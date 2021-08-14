@@ -137,3 +137,17 @@ var x = setInterval(function() {
     document.body.style.backgroundImage = "url('img/Xolo-Despierto.jpg')";
   }
 }, 1000);
+
+
+window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+});
+
+
+window.scrollBy({ 
+    top: 100, 
+    left: 0, 
+    behavior: 'smooth' 
+});
