@@ -593,24 +593,10 @@ div.contenido
     text-align: center;
     font-size: 1.5em;
 }
-.prices .row
+.prices .tableCentered
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.prices div.column
-{
-    padding: 5px;
-    margin-left: 10px;
-}
-.prices .emails
-{
-    font-weight: bold;
-}
-.prices #pricesUsDiv
-{
-    display: none;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 /* ----- Ecosystem ----- */
