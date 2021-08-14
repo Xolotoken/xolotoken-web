@@ -137,7 +137,7 @@ header .selectedL
     
 }
 
-@media(max-width: 1250px)
+@media(max-width: 1412px)
 {
     header .mainMenu
     {
@@ -1261,7 +1261,6 @@ div.partners
 .qrSegment p.opacityGradient
 {
     background: -webkit-linear-gradient(.5turn, #eee, #333);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
