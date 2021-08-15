@@ -137,6 +137,7 @@ var x = setInterval(function() {
     document.getElementById("marqueeMessage").style.display = "none";
     document.getElementById("countdown").style.display = "none";
     document.getElementById("liveLogo").style.display = "none";
+    document.getElementById("buyButton").innerHTML = "Buy XOLO";
     document.body.style.backgroundImage = "url('img/Xolo-Despierto-NUEVARDA.jpg')";
   }
 }, 1000);
