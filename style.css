@@ -21,8 +21,9 @@
 body
 {   
     background-image: url(img/Xolo-Durmiendo.jpg);
+    /*background-image: url(img/Xolo-Despierto-NUEVARDA.jpg);*/
     background-color: black;
-    background-size:contain; 
+    background-size: 32%; 
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position: center;
@@ -177,6 +178,12 @@ header .selectedL
 
     }
 
+    body
+    {     
+
+        background-size: 50%; 
+
+    }
 }
 
 
@@ -374,6 +381,13 @@ div.landingPage
     .landingPage div.row
     {
         margin-top: 40px;
+    }
+
+    body
+    {     
+
+        background-size: 100%; 
+        
     }
 
 }

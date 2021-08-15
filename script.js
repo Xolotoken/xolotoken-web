@@ -134,7 +134,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("marqueeMessage").style.display = "none";
     document.getElementById("countdown").style.display = "none";
-    document.body.style.backgroundImage = "url('img/Xolo-Despierto.jpg')";
+    document.body.style.backgroundImage = "url('img/Xolo-Despierto-NUEVARDA.jpg')";
   }
 }, 1000);
 
