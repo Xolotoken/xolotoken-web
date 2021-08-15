@@ -123,9 +123,11 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distancePresale < 0) {
     
-    document.getElementById("countdownP").innerHTML = "PRESALE LIVE";
-    document.getElementById("slidingMessage").innerHTML = "PRESALE LIVE";
-    document.getElementById("slidingMessage").style.color = "#FFFF00";
+    document.getElementById("countdownP").innerHTML = "JOIN PRESALE";
+    document.getElementById("slidingMessage").innerHTML = "JOIN PRESALE";
+    document.getElementById("slidingMessage").style.display = "inline-block";
+    document.getElementById("liveLogo").style.display = "inline-block";
+    document.getElementById("liveLogoMarquee").style.display = "inline-block";
     document.getElementById("countdownUpperText").innerHTML = "PRE-SALE ENDS ON SEPTEMBER 1, 13h00 UTC";
     
   }
@@ -134,6 +136,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("marqueeMessage").style.display = "none";
     document.getElementById("countdown").style.display = "none";
+    document.getElementById("liveLogo").style.display = "none";
     document.body.style.backgroundImage = "url('img/Xolo-Despierto-NUEVARDA.jpg')";
   }
 }, 1000);

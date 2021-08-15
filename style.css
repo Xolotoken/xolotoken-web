@@ -305,6 +305,10 @@ div.landingPage
 {
     background: var(--golden);
 }
+.landingPage .countdownP
+{
+    display: inline-block;
+}
 
 @media(max-width: 1556px)
 {
@@ -1556,6 +1560,10 @@ span.medium:hover
 {
     color: #C4E2FF
 }
+span.youtube:hover
+{
+    color: #FF0000;
+}
 
 a.dmca-badge
 {
@@ -1655,6 +1663,14 @@ html
     scroll-behavior: smooth;
 }
 
+.liveLogo,
+.liveLogoMarquee
+{
+    width: 3%;
+    display: none;
+    min-width: 38px;
+    min-height: 21px;
+}
 
 
 /*-------------------------------------------------*/

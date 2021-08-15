@@ -146,6 +146,7 @@
                 <a href="https://discord.com/invite/55CndQd5vF"><span class="fab fa-2x fa-discord discord"></span></a>
                 <a href="https://www.instagram.com/xolotoken/"><span class="fab fa-2x fa-instagram-square instagram"></span></a>
                 <a href="https://www.reddit.com/r/XoloTokenComunity/"><span class="fab fa-2x fa-reddit reddit"></span></a>
+                <a href="https://www.youtube.com/channel/UCywv477kcPbNVKjEYcthB1w/featured" target="_blank"><span class="fab fa-2x fa-youtube-square youtube"></span></a>
                 <a href="https://medium.com/@XoloTokenXOLO" target="_blank">
                     <span class="medium">
                         <svg width="27" height="27" viewBox="0 0 16 16" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
@@ -161,10 +162,14 @@
 
     <section id="home" class="home">
 
-        <div class="slidingMessage" id="marqueeMessage">
-            
-            <marquee id="slidingMessageMarquee" direction="left" height="50" width="100%" scrollamount="12"><p id="slidingMessage" style="color: yellow;">Pre-Venta Agosto 25 13:00 UTC</p></marquee>
-            
+        <div class="slidingMessage" id="marqueeMessage">            
+            <marquee id="slidingMessageMarquee" direction="left" height="50" width="100%" scrollamount="12">
+                <div style="vertical-align: middle;">
+                    <p id="slidingMessage" style="color: yellow;">Pre-Venta En DxSale Agosto 25 13:00 UTC</p> 
+                    <img class="liveLogoMarquee" id="liveLogoMarquee" src="../img/live-logo.png" alt="">   
+                </div>
+                
+            </marquee>
         </div>
         
         <div class="landingPage" id="landingPage">
@@ -209,7 +214,9 @@
                     
                     <!--<span><h2 class="text-golden countdonwTitle">VENTA PRIVADA</h2></span>-->
                     <span><h3 class="countDownMinMax text-golden" id="countdownUpperText">LA PREVENTA INICIA EN AGOSTO 25, 13h00 UTC</h3></span>
-                    <h2><p id="countdownP" class="countdownP"></p></h2>
+                    <div>
+                        <h2><p id="countdownP" class="countdownP"></p> <img class="liveLogo" id="liveLogo" src="../img/live-logo.png" alt=""> </h2>
+                    </div>
                     <span><h3 class="countDownMinMax">Min. 0.05 BNB  -  Max. 5 BNB</h3></span>
                 </div>
 
@@ -1178,6 +1185,15 @@
                             <td>2% por Transacción</td>
                         </tr>
                     </table>
+
+                    <br>
+                    <div class="text" style="text-align: center;">
+                        <p>
+                            El resto de los tokens se distribuyen en la piscina del comercio 
+                            (los porcentajes anotados son los valores iniciales de arranque del proyecto, 
+                            el token es deflacionario y la cantidad varía constantemente).
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -1220,7 +1236,8 @@
         
         <section id="banner" class="banner">
             <div class="content">
-                <img src="../img/xolo-banner.gif" width="100%"></img>
+                <!--<img src="img/xolo-banner.gif" width="100%"></img>-->
+                <iframe data-aa="1746133" src="//ad.a-ads.com/1746133?size=468x60" style="width:468px; height:60px; border:0px; padding:0; overflow:hidden; background-color: transparent;" ></iframe>
             </div>
             <div class="certifications">
                 <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
@@ -1267,7 +1284,7 @@
                     </a>  
                     <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
 
-                    <img src="img/ssl-logo.png"  style="width: 9%; min-height: 42px; min-width: 42px;" alt="">
+                    <img src="../img/ssl-logo.png"  style="width: 9%; min-height: 42px; min-width: 42px; margin-left: 8px;" alt="">
                 </div>
 
                 <div class="middle box">
@@ -1284,13 +1301,14 @@
                         <a href="https://discord.com/invite/55CndQd5vF" target="_blank"><span class="fab fa-2x fa-discord discord"></span></a>
                         <a href="https://www.instagram.com/xolotoken/" target="_blank"><span class="fab fa-2x fa-instagram-square instagram"></span></a>
                         <a href="https://www.reddit.com/r/XoloTokenComunity/" target="_blank"><span class="fab fa-2x fa-reddit reddit"></span></a>
+                        <a href="https://www.youtube.com/channel/UCywv477kcPbNVKjEYcthB1w/featured" target="_blank"><span class="fab fa-2x fa-youtube-square youtube"></span></a>
                         <a href="https://medium.com/@XoloTokenXOLO" target="_blank">
                             <span class="medium">
                                 <svg width="27" height="27" viewBox="0 0 16 16" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.3788 4.39113L14.4001 3.41406V3.2002H10.862L8.34036 9.47646L5.47156 3.2002H1.7617V3.41406L2.95476 4.85033C3.07103 4.95646 3.13183 5.11166 3.11636 5.26793V10.9122C3.15316 11.1154 3.08703 11.3245 2.9441 11.4722L1.6001 13.101V13.3122H5.41076V13.0983L4.06676 11.4722C3.92116 11.3239 3.85236 11.1186 3.8817 10.9122V6.03006L7.22676 13.3149H7.61556L10.4918 6.03006V11.8333C10.4918 11.9863 10.4918 12.0178 10.3916 12.1181L9.3569 13.1191V13.3335H14.3766V13.1197L13.3793 12.1431C13.2918 12.077 13.2465 11.9661 13.2652 11.8583V4.67593C13.2465 4.56766 13.2913 4.45673 13.3788 4.39113V4.39113Z" fill="#FFFFFF"></path>
                                 </svg>
                             </span>                            
-                        </a>
+                        </a>                        
                     </div>
                  </div>
             </div>
