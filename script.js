@@ -129,6 +129,7 @@ var x = setInterval(function() {
     document.getElementById("liveLogo").style.display = "inline-block";
     document.getElementById("liveLogoMarquee").style.display = "inline-block";
     document.getElementById("countdownUpperText").innerHTML = "PRE-SALE ENDS ON SEPTEMBER 1, 13h00 UTC";
+    document.getElementById("buyHereButton").style.display = "inline-block";
     
   }
 
